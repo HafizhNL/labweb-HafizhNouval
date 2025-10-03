@@ -1,0 +1,77 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>COOP Prasmul</title>
+  <link rel="stylesheet" href="{% static 'promotion_style.css' %}" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container-fluid">
+        <img src="https://kompaspedia.kompas.id/wp-content/uploads/2021/07/Logo_Universitas-Prasetiya-Mulya_thumb.png" class="logo"/>
+      </div>
+    </nav>
+
+    <section class="hero">
+        <div>
+            <h1>Portal Co-op & Internship</h1>
+            <p>Daftarkan dirimu sekarang! Mulailah proses pendaftaran dengan melaporkan posisi magangmu.</p>
+        </div>
+    </section>
+
+    <section class="content">
+        <div class="container">
+            <div class="info-box">
+                <div class="head">
+                    <h2>About</h2>
+                </div>
+                <p>
+                    Program Cooperative Education (COOP) adalah program pengembangan karier yang memberikan kesempatan kepada mahasiswa untuk memperoleh pengalaman kerja nyata di perusahaan mitra sambil tetap menjalankan kewajiban akademik.
+                </p>
+                <p>
+                    Melalui Program COOP, mahasiswa tidak hanya mengasah keterampilan teknis sesuai bidang studi, tetapi juga mengembangkan kemampuan profesional seperti komunikasi, kerja sama tim, dan problem solving. Seluruh pengalaman kerja yang diperoleh akan dikonversi sebagai bagian dari kurikulum, sehingga mahasiswa mendapatkan nilai akademik sekaligus pengalaman industri.
+                </p>
+                <p>
+                    Website COOP ini dirancang untuk memfasilitasi seluruh proses mulai dari pendaftaran mahasiswa, konfirmasi penempatan, pelaporan kegiatan, hingga evaluasi supervisor dan penerbitan sertifikat resmi. Dengan adanya sistem ini, diharapkan mahasiswa, dosen, dan perusahaan dapat terhubung secara lebih mudah, transparan, dan efisien.
+                </p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="info-questions">
+                <div class="head">
+                    <h2>Contact Us</h2>
+                </div>
+                <div>
+                    <p>
+                        BSD City Kavling Edutown I.1
+                        Jl. BSD Raya Utama, BSD City 15339
+                        Kabupaten Tangerang, Indonesia
+                    </p>
+                </div>
+                <ul>
+                    <li>Tel. (021) 304-50-500</li>
+                    <li>WA. (+62) 81511662005 / (+62) 8124111660</li>
+                    <li>Email. info@prasetiyamulya.ac.id</li>
+                </ul>
+                <hr style="border: 3px solid #ffffffff; width: 100%;">
+                <div class="info-login">
+                    <a href="{% url 'login'%}" class="button-page btn btn-light mx-100%">Login</a>
+                    <a href="{% url 'register' %}" class="button-page btn btn-light mx-100%">Register</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 Prasetiya Mulya. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

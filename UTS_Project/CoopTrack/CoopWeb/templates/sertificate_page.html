@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sertifikat Magang</title>
+    <link rel="stylesheet" href="{% static 'sertificate_style.css' %}">
+</head>
+<body>
+    <div class="certificate-container">
+        <div class="certificate">
+            <h1 class="certificate-title">SERTIFIKAT MAGANG</h1>
+            <p class="certificate-desc">Diberikan kepada:</p>
+            <h2 class="certificate-name">{{ nama }}</h2>
+            <p class="certificate-nim">NIM: {{ nim }}</p>
+            <p class="certificate-prodi">Program Studi: {{ program_studi }}</p>
+            <p class="certificate-perusahaan">Nama Perusahaan: {{ nama_perusahaan }}</p>
+            <p class="certificate-periode">Periode Magang: {{ periode_magang }}</p>
+            <p class="certificate-nilai">Konversi Nilai ke Mata Kuliah Coop: <b>{{ konversi_nilai_coop }}</b></p>
+            <div class="certificate-footer">
+                <p>Prasetiya Mulya University</p>
+                <p>Tanggal: {{ tanggal|default:date }}</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

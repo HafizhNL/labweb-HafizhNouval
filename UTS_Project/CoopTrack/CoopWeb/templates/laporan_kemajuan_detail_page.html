@@ -1,0 +1,61 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detail Laporan Mingguan Magang</title>
+    <link
+      rel="stylesheet"
+      href="{% static 'laporan_kemajuan_detail_style.css' %}"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="laporan-detail py-5">
+      <div class="col-md-8">
+        <div class="card mb-4">
+          <div class="title">
+            <h4>Detail Laporan Mingguan</h4>
+          </div>
+          <div class="card-body">
+            <div>
+              <h5 class="mb-3">Laporan Mingguan - {{ laporan.tanggal }}</h5>
+              <div>
+                <strong>Profil Perusahaan</strong>
+                <p>{{ laporan.profil_perusahaan }}</p>
+              </div>
+              <div>
+                <strong>Jobdesk</strong>
+                <p>{{ laporan.jobdesk }}</p>
+              </div>
+              <div>
+                <strong>Deskripsi Pekerjaan</strong>
+                <p>{{ laporan.suasana_lingkungan_pekerjaan }}</p>
+              </div>
+              <div>
+                <strong>Hal dari Perkuliahan yang Berguna untuk Pekerjaan</strong>
+                <p>{{ laporan.apa_yang_didapatkan_dari_perkuliahan }}</p>
+              </div>
+              <div>
+                <strong
+                  >Hal Berguna di Perusahaan tapi Belum Didapatkan dalam
+                  Pembelajaran</strong
+                >
+                <p>
+                  {{ laporan.apa_yang_belum_didapatkan_dalam_pembelajaran }}
+                </p>
+              </div>
+            </div>
+            <a href="{% url 'laporan_kemajuan' %}" class="btn btn-secondary"
+              >Kembali ke Daftar Laporan</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

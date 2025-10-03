@@ -1,0 +1,154 @@
+.navbar {
+    background-color: rgb(31, 60, 112);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    height: 12vh;
+    width: 10vw;
+    vertical-align: middle;
+}
+
+.navbar .navbar-nav {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+/* Home */
+
+/* .home {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    background-color: #ffffff;
+    padding: 20px;
+    gap: 2rem;
+    margin: auto;
+} */
+
+.profile {
+    text-align: center;
+    width: 50rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 63vh;
+    background-color: #ffffff;
+    margin: auto;
+    /* padding: 20px; */
+
+}
+
+.profile .icon {
+    width: 80px;
+    height: 80px;
+    font-size: 2rem;
+    margin: 0 auto 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(219, 219, 219);
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 90px;
+    padding: 20px;
+}
+
+
+/* Lowongan */
+.internship {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 150vh;
+    background: #fff;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.10);
+    border-radius: 12px;
+    padding: 32px;
+    max-width: 1000px;
+    height: auto;
+    margin: auto;
+}
+
+.form-box {
+    max-width: 800px;
+    margin: 40px auto;
+    background: #fff;
+}
+
+.form-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.form-box input,
+.form-box textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+/* Laporan Kemajuan */
+.laporan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 180vh;
+    background: #fff;
+    border-radius: 12px;
+    padding-top: 32px;
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.10);
+}
+
+/* Laporan Akhir */
+.laporan-akhir {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    background: #fff;
+    border-radius: 12px;
+    padding-top: 32px;
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.10);
+}
+
+
+
+/* Kaprodi */
+.kaprodi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 115vh;
+    background: #fff;
+    border-radius: 12px;
+    padding: 32px;
+    max-width: 1600px;
+    height: auto;
+    margin: auto;
+}

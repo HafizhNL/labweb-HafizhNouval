@@ -1,0 +1,20 @@
+.laporan-detail {
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.laporan-detail .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    background-color: rgb(16, 48, 110);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: white;
+}

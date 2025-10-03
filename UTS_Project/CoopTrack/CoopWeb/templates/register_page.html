@@ -1,0 +1,134 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>COOP Prasmul</title>
+    <link rel="stylesheet" href="{% static 'register_style.css' %}" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <section class="register">
+      <div class="form">
+        <div class="logo">
+          <img
+            src="https://kompaspedia.kompas.id/wp-content/uploads/2021/07/Logo_Universitas-Prasetiya-Mulya_thumb.png"
+            class="logo"
+          />
+        </div>
+        <h3 class="text-center mb-4">Register</h3>
+  <form method="post" enctype="multipart/form-data">
+          {% csrf_token %}
+          <div
+            class="container d-flex justify-content-center align-items-center flex-column"
+          >
+            <input type="hidden" name="action" value="register" />
+            <div class="form-container mb-3">
+              <label>Nama Lengkap</label>
+              <input
+                type="text"
+                name="nama"
+                placeholder="e.g. Hafizh Nouval Lafayette"
+                class="form-control"
+                required
+              />
+            </div>
+            <div class="form-container mb-3">
+              <label>NIM</label>
+              <input
+                type="text"
+                name="nim"
+                placeholder="e.g. 23500000001"
+                class="form-control"
+                required
+              />
+            </div>
+            <div class="form-container mb-3">
+              <label>Program Studi</label>
+              <input type="text" name="jurusan" placeholder="e.g. DBT" class="form-control" required />
+            </div>
+            <div class="form-container mb-3">
+              <label>Angkatan</label>
+              <input type="text" name="angkatan" placeholder="e.g. 2025" class="form-control" required />
+            </div>
+            <div class="form-container mb-3">
+              <label>Jenis Kelamin</label>
+              <div class="input-group mb-3">
+                <select class="form-select" name="jenis_kelamin" required>
+                  <option value="">Opsi...</option>
+                  <option value="Laki-laki">Laki-laki</option>
+                  <option value="Perempuan">Perempuan</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-container mb-3">
+              <label>Alamat Email Outlook</label>
+              <input
+                type="email"
+                name="email_outlook"
+                placeholder="e.g. 23500000001@student.prasetiyamulya.ac.id"
+                class="form-control"
+                required
+              />
+            </div>
+            <div class="form-container mb-3">
+              <label>Password</label>
+              <input
+                type="password"
+                name="password"
+                placeholder="Masukkan Password"
+                class="form-control"
+                required
+              />
+            </div>
+            <div class="form-container mb-3">
+              <label>Kontak Whatsapp</label>
+              <input
+                type="text"
+                name="no_hp"
+                placeholder="e.g. 0811810000"
+                class="form-control"
+                required
+              />
+            </div>
+            <div class="form-container mb-3">
+              <label>Bukti Konsultasi dengan Mentor</label>
+              <div class="input-group mb-3">
+                <input type="file" name="bukti_konsultasi" class="form-control" id="inputGroupFile02" required />
+              </div>
+            </div>
+            <div class="form-container mb-3">
+              <label>Bukti SPTJM</label>
+              <div class="input-group mb-3">
+                <input type="file" name="sptjm" class="form-control" id="inputGroupFile02" required />
+              </div>
+            </div>
+            <div class="form-container mb-3">
+              <label>Upload CV</label>
+              <div class="input-group mb-3">
+                <input type="file" name="cv" class="form-control" id="inputGroupFile02" required />
+              </div>
+            </div>
+            <div class="form-container mb-3">
+              <label>Upload Protofolio</label>
+              <div class="input-group mb-3">
+                <input type="file" name="protofolio" class="form-control" id="inputGroupFile02" required />
+              </div>
+            </div>
+            <p>Note: Pastikan email dan password dicatat</p>
+            <button
+              href="{% url 'login' %}"
+              class="button-page btn btn-light mx-100%"
+              >Register
+          </button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
